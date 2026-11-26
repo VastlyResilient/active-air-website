@@ -7,6 +7,8 @@
 ## Run it
 - Build: `cd site && node src/build.mjs` (`SHOW_GAPS=1` shows the orange "needed" chips)
 - Serve: `node serve.mjs dist 4403` → http://localhost:4403/
+- GitHub (public): https://github.com/VastlyResilient/active-air-website
+- Live test copy (noindex): https://vastlyresilient.github.io/active-air-website/ — republish with `sh site/publish-pages.sh` (builds with the /active-air-website prefix and force-pushes the gh-pages branch)
 - QA: `cd site/qa && node func.mjs` (15 routes × Chrome 360–1920 + WebKit iPhone: status, overflow, off-screen controls, reveals after fast/reverse scroll, broken images, hero, Call+Book, carousel, accordion, dock, phone menu, form, reduced motion)
 - Idle survey: `cd ~/starwell-si-site/qa && URL=http://localhost:4403/ node idle-survey.mjs`
 - Images: `cd media && python prep.py` (Flow picks + own-photo crops → `site/public/img/m/`)

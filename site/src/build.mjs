@@ -29,3 +29,25 @@ for (const r of routes) {
 }
 fs.writeFileSync(path.join(rootDir, 'gaps.txt'), [...new Set(gaps)].join('\n') + '\n');
 console.log(`built ${routes.length} routes -> ${out}; ${new Set(gaps).size} open gaps`);
+
+// Test hosting under a sub-path (GitHub Pages project site): BASE=/active-air-website node src/build.mjs
+// Prefixes every root-relative link/asset and marks the copy noindex so it never competes with the real domain.
+const BASE = (process.env.BASE || '').replace(/\/$/, '');
+if (BASE) {
+  const walk = d => fs.readdirSync(d, { withFileTypes: true }).flatMap(e => e.isDirectory() ? walk(path.join(d, e.name)) : [path.join(d, e.name)]);
+  for (const f of walk(out)) {
+    if (f.endsWith('.html')) {
+      let h = fs.readFileSync(f, 'utf8');
+      h = h.replace(/(href|src|action|content)="\/(?!\/)/g, `$1="${BASE}/`)
+           .replace(/srcset="([^"]+)"/g, (m, v) => `srcset="${v.replace(/(^|,\s*)\/(?!\/)/g, `$1${BASE}/`)}"`)
+           .replace('<meta charset="utf-8">', '<meta charset="utf-8">\n<meta name="robots" content="noindex, nofollow">');
+      fs.writeFileSync(f, h);
+    } else if (f.endsWith('.css')) {
+      fs.writeFileSync(f, fs.readFileSync(f, 'utf8').replace(/url\(\/(?!\/)/g, `url(${BASE}/`));
+    }
+  }
+  fs.writeFileSync(path.join(out, 'robots.txt'), 'User-agent: *\nDisallow: /\n');
+  fs.rmSync(path.join(out, '_redirects'), { force: true });
+  fs.writeFileSync(path.join(out, '.nojekyll'), '');
+  console.log(`prefixed for ${BASE} (noindex test copy)`);
+}

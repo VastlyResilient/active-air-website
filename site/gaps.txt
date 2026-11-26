@@ -1,0 +1,64 @@
+/ · Typical price ranges for furnace, boiler, heat pump, mini-split and AC replacement
+/ · Financing terms (lender, APR, monthly example) — none published; Klarna is switched on at checkout but never mentioned
+/ · Technician names and roles
+/ · Maintenance tech name
+/ · Featured reviews that name the town (none of the visible Google reviews name one; needs the Google review export)
+/ · Confirm the final town list (Facebook also lists Weston, Newtown and Westport)
+/ · License type/number and insurance confirmation (not found in CT eLicense lookup on 2026-11-26)
+/ · Financing offer and terms
+/ · CT HVAC license type and number needed (none found on elicense.ct.gov)
+/ · Business hours needed (site settings disagree: 7am–5pm vs 7am–7pm)
+/hvac-services-repair · Typical price ranges for furnace, boiler, heat pump, mini-split and AC replacement
+/hvac-services-repair · Financing terms (lender, APR, monthly example) — none published; Klarna is switched on at checkout but never mentioned
+/hvac-services-repair · CT HVAC license type and number needed (none found on elicense.ct.gov)
+/hvac-services-repair · Business hours needed (site settings disagree: 7am–5pm vs 7am–7pm)
+/heating-repair · Service-call / diagnostic fee
+/heating-repair · CT HVAC license type and number needed (none found on elicense.ct.gov)
+/heating-repair · Business hours needed (site settings disagree: 7am–5pm vs 7am–7pm)
+/gas-furnace-replacement-installation · Typical installed price range for gas furnace replacement
+/gas-furnace-replacement-installation · Financing terms (monthly payment example)
+/gas-furnace-replacement-installation · CT HVAC license type and number needed (none found on elicense.ct.gov)
+/gas-furnace-replacement-installation · Business hours needed (site settings disagree: 7am–5pm vs 7am–7pm)
+/oil-boiler-replacement-installation · Typical installed price range for oil boiler replacement
+/oil-boiler-replacement-installation · Financing terms (monthly payment example)
+/oil-boiler-replacement-installation · CT HVAC license type and number needed (none found on elicense.ct.gov)
+/oil-boiler-replacement-installation · Business hours needed (site settings disagree: 7am–5pm vs 7am–7pm)
+/heat-pump-equipment-installation-replacement · Typical installed price range for heat pump replacement
+/heat-pump-equipment-installation-replacement · Financing terms (monthly payment example)
+/heat-pump-equipment-installation-replacement · Energize CT heat pump rebate participation (Active Air is not listed in the Energize CT installer network as of 2026-11-26)
+/heat-pump-equipment-installation-replacement · CT HVAC license type and number needed (none found on elicense.ct.gov)
+/heat-pump-equipment-installation-replacement · Business hours needed (site settings disagree: 7am–5pm vs 7am–7pm)
+/mini-split-installation · Typical installed price range for mini-split replacement
+/mini-split-installation · Financing terms (monthly payment example)
+/mini-split-installation · CT HVAC license type and number needed (none found on elicense.ct.gov)
+/mini-split-installation · Business hours needed (site settings disagree: 7am–5pm vs 7am–7pm)
+/air-conditioning · Typical installed price range for central ac replacement
+/air-conditioning · Financing terms (monthly payment example)
+/air-conditioning · CT HVAC license type and number needed (none found on elicense.ct.gov)
+/air-conditioning · Business hours needed (site settings disagree: 7am–5pm vs 7am–7pm)
+/hot-water-tank-replacement · Typical installed price range for water heater replacement
+/hot-water-tank-replacement · Financing terms (monthly payment example)
+/hot-water-tank-replacement · CT HVAC license type and number needed (none found on elicense.ct.gov)
+/hot-water-tank-replacement · Business hours needed (site settings disagree: 7am–5pm vs 7am–7pm)
+/hvac-maintenance · Online checkout link for maintenance (the old Squarespace store goes away with the new site)
+/hvac-maintenance · CT HVAC license type and number needed (none found on elicense.ct.gov)
+/hvac-maintenance · Business hours needed (site settings disagree: 7am–5pm vs 7am–7pm)
+/about · Technician names and roles
+/about · Co-owner name and role (Nextdoor intro signed Karen DeJesus; confirm before naming)
+/about · CT HVAC license type and number needed (none found on elicense.ct.gov)
+/about · Business hours needed (site settings disagree: 7am–5pm vs 7am–7pm)
+/contact · Form delivery: connect to the CRM / email, and the Starwell 1-minute text-back
+/contact · Confirm the final town list (Facebook also lists Weston, Newtown and Westport)
+/contact · CT HVAC license type and number needed (none found on elicense.ct.gov)
+/contact · Business hours needed (site settings disagree: 7am–5pm vs 7am–7pm)
+/free-hvac-consultation · Online booking with real open times needs Active Air’s scheduling tool (none in use today)
+/free-hvac-consultation · CT HVAC license type and number needed (none found on elicense.ct.gov)
+/free-hvac-consultation · Business hours needed (site settings disagree: 7am–5pm vs 7am–7pm)
+/hvac-gallery · More recent job photos at full size (the Google profile has 91 photos; originals needed)
+/hvac-gallery · CT HVAC license type and number needed (none found on elicense.ct.gov)
+/hvac-gallery · Business hours needed (site settings disagree: 7am–5pm vs 7am–7pm)
+/online-payments · Online payment link (Stripe/Square) to replace the Squarespace store checkout
+/online-payments · CT HVAC license type and number needed (none found on elicense.ct.gov)
+/online-payments · Business hours needed (site settings disagree: 7am–5pm vs 7am–7pm)
+/404.html · CT HVAC license type and number needed (none found on elicense.ct.gov)
+/404.html · Business hours needed (site settings disagree: 7am–5pm vs 7am–7pm)

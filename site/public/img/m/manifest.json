@@ -1,0 +1,736 @@
+{
+ "h1-colonial": {
+  "w": 1376,
+  "h": 768,
+  "widths": [
+   640,
+   1280,
+   1376
+  ],
+  "kind": "illustration",
+  "source": "Google Flow, Nano Banana Pro",
+  "file": "36-ar1.79.jpg"
+ },
+ "h1-colonial-p": {
+  "w": 768,
+  "h": 1376,
+  "widths": [
+   640,
+   768
+  ],
+  "kind": "illustration",
+  "source": "Google Flow, Nano Banana Pro",
+  "file": "34-ar0.56.jpg"
+ },
+ "h2-winter": {
+  "w": 1376,
+  "h": 768,
+  "widths": [
+   640,
+   1280,
+   1376
+  ],
+  "kind": "illustration",
+  "source": "Google Flow, Nano Banana Pro",
+  "file": "32-ar1.79.jpg"
+ },
+ "h2-winter-p": {
+  "w": 768,
+  "h": 1376,
+  "widths": [
+   640,
+   768
+  ],
+  "kind": "illustration",
+  "source": "Google Flow, Nano Banana Pro",
+  "file": "30-ar0.56.jpg"
+ },
+ "h3-living": {
+  "w": 1376,
+  "h": 768,
+  "widths": [
+   640,
+   1280,
+   1376
+  ],
+  "kind": "illustration",
+  "source": "Google Flow, Nano Banana Pro",
+  "file": "28-ar1.79.jpg"
+ },
+ "h3-living-p": {
+  "w": 768,
+  "h": 1376,
+  "widths": [
+   640,
+   768
+  ],
+  "kind": "illustration",
+  "source": "Google Flow, Nano Banana Pro",
+  "file": "26-ar0.56.jpg"
+ },
+ "furnace": {
+  "w": 1376,
+  "h": 768,
+  "widths": [
+   640,
+   1280,
+   1376
+  ],
+  "kind": "illustration",
+  "source": "Google Flow, Nano Banana Pro",
+  "file": "25-ar1.79.jpg"
+ },
+ "boiler": {
+  "w": 1376,
+  "h": 768,
+  "widths": [
+   640,
+   1280,
+   1376
+  ],
+  "kind": "illustration",
+  "source": "Google Flow, Nano Banana Pro",
+  "file": "22-ar1.79.jpg"
+ },
+ "minisplit-bed": {
+  "w": 1376,
+  "h": 768,
+  "widths": [
+   640,
+   1280,
+   1376
+  ],
+  "kind": "illustration",
+  "source": "Google Flow, Nano Banana Pro",
+  "file": "20-ar1.79.jpg"
+ },
+ "waterheater": {
+  "w": 1376,
+  "h": 768,
+  "widths": [
+   640,
+   1280,
+   1376
+  ],
+  "kind": "illustration",
+  "source": "Google Flow, Nano Banana Pro",
+  "file": "19-ar1.79.jpg"
+ },
+ "repair": {
+  "w": 1376,
+  "h": 768,
+  "widths": [
+   640,
+   1280,
+   1376
+  ],
+  "kind": "illustration",
+  "source": "Google Flow, Nano Banana Pro",
+  "file": "17-ar1.79.jpg"
+ },
+ "kitchen": {
+  "w": 1024,
+  "h": 1024,
+  "widths": [
+   640,
+   1024
+  ],
+  "kind": "illustration",
+  "source": "Google Flow, Nano Banana Pro",
+  "file": "14-ar1.00.jpg"
+ },
+ "thermostat": {
+  "w": 1024,
+  "h": 1024,
+  "widths": [
+   640,
+   1024
+  ],
+  "kind": "illustration",
+  "source": "Google Flow, Nano Banana Pro",
+  "file": "12-ar1.00.jpg"
+ },
+ "street": {
+  "w": 1024,
+  "h": 1024,
+  "widths": [
+   640,
+   1024
+  ],
+  "kind": "illustration",
+  "source": "Google Flow, Nano Banana Pro",
+  "file": "10-ar1.00.jpg"
+ },
+ "baseboard": {
+  "w": 1024,
+  "h": 1024,
+  "widths": [
+   640,
+   1024
+  ],
+  "kind": "illustration",
+  "source": "Google Flow, Nano Banana Pro",
+  "file": "09-ar1.00.jpg"
+ },
+ "cta-evening": {
+  "w": 1376,
+  "h": 768,
+  "widths": [
+   640,
+   1280,
+   1376
+  ],
+  "kind": "illustration",
+  "source": "Google Flow, Nano Banana Pro",
+  "file": "06-ar1.79.jpg"
+ },
+ "about-street": {
+  "w": 1376,
+  "h": 768,
+  "widths": [
+   640,
+   1280,
+   1376
+  ],
+  "kind": "illustration",
+  "source": "Google Flow, Nano Banana Pro",
+  "file": "04-ar1.79.jpg"
+ },
+ "heatpump-snow": {
+  "w": 1376,
+  "h": 768,
+  "widths": [
+   640,
+   1280,
+   1376
+  ],
+  "kind": "illustration",
+  "source": "Google Flow, Nano Banana Pro",
+  "file": "02-ar1.79.jpg"
+ },
+ "equipment": {
+  "w": 1376,
+  "h": 768,
+  "widths": [
+   640,
+   1280,
+   1376
+  ],
+  "kind": "illustration",
+  "source": "Google Flow, Nano Banana Pro",
+  "file": "00-ar1.79.jpg"
+ },
+ "own-ductless-living": {
+  "w": 1440,
+  "h": 810,
+  "widths": [
+   640,
+   1280,
+   1440
+  ],
+  "kind": "own",
+  "source": "home-13-ig-ductless-living-room.jpg",
+  "crop": [
+   0,
+   135,
+   1440,
+   945
+  ]
+ },
+ "own-ductless-living-p": {
+  "w": 607,
+  "h": 1080,
+  "widths": [
+   607,
+   1000
+  ],
+  "kind": "own",
+  "source": "home-13-ig-ductless-living-room.jpg",
+  "crop": [
+   520,
+   0,
+   1127,
+   1080
+  ]
+ },
+ "own-multizone": {
+  "w": 1440,
+  "h": 810,
+  "widths": [
+   640,
+   1280,
+   1440
+  ],
+  "kind": "own",
+  "source": "home-23-ig-ductless-multizone-exterior.jpg",
+  "crop": [
+   0,
+   100,
+   1440,
+   910
+  ]
+ },
+ "own-multizone-sq": {
+  "w": 1080,
+  "h": 1080,
+  "widths": [
+   640,
+   1080
+  ],
+  "kind": "own",
+  "source": "home-23-ig-ductless-multizone-exterior.jpg",
+  "crop": [
+   230,
+   0,
+   1310,
+   1080
+  ]
+ },
+ "own-tech-furnace": {
+  "w": 1179,
+  "h": 1284,
+  "widths": [
+   640,
+   1179
+  ],
+  "kind": "own",
+  "source": "home-03-tech-servicing-furnace-repair-tile.jpg",
+  "crop": [
+   0,
+   300,
+   1179,
+   1584
+  ]
+ },
+ "own-tech-furnace-card": {
+  "w": 1179,
+  "h": 1361,
+  "widths": [
+   640,
+   1179
+  ],
+  "kind": "own",
+  "source": "home-03-tech-servicing-furnace-repair-tile.jpg",
+  "crop": [
+   0,
+   190,
+   1179,
+   1551
+  ]
+ },
+ "own-tech-wiring": {
+  "w": 1057,
+  "h": 966,
+  "widths": [
+   640,
+   1057
+  ],
+  "kind": "own",
+  "source": "home-02-tech-wiring-air-handler-maintenance-tile.jpg",
+  "crop": null
+ },
+ "own-owner": {
+  "w": 580,
+  "h": 880,
+  "widths": [
+   580,
+   1000
+  ],
+  "kind": "own",
+  "source": "about-01-owner-andrew-dejesus-portrait.jpg",
+  "crop": [
+   300,
+   130,
+   880,
+   1010
+  ]
+ },
+ "own-tech-condenser": {
+  "w": 500,
+  "h": 625,
+  "widths": [
+   500,
+   1000
+  ],
+  "kind": "own",
+  "source": "online-payments-05-tech-servicing-condenser.png",
+  "crop": null
+ },
+ "own-hat-innovair": {
+  "w": 1179,
+  "h": 1474,
+  "widths": [
+   640,
+   1179
+  ],
+  "kind": "own",
+  "source": "home-31-ig-innovair-mini-split-hat.jpg",
+  "crop": [
+   0,
+   300,
+   1179,
+   1774
+  ]
+ },
+ "own-ladder": {
+  "w": 720,
+  "h": 1278,
+  "widths": [
+   640,
+   720
+  ],
+  "kind": "own",
+  "source": "home-21-ig-tech-ladder-three-condensers.jpg",
+  "crop": null
+ },
+ "own-bryant-trumbull": {
+  "w": 659,
+  "h": 720,
+  "widths": [
+   659,
+   1000
+  ],
+  "kind": "own",
+  "source": "home-09-bryant-condenser-install-trumbull.jpg",
+  "crop": null
+ },
+ "own-crane": {
+  "w": 640,
+  "h": 1136,
+  "widths": [
+   640,
+   1000
+  ],
+  "kind": "own",
+  "source": "home-17-ig-mitsubishi-crane-lift.jpg",
+  "crop": null
+ },
+ "own-airhandler-shelton": {
+  "w": 353,
+  "h": 477,
+  "widths": [
+   353,
+   706
+  ],
+  "kind": "own",
+  "source": "hvac-gallery-02-shelton-bryant-air-handler.png",
+  "crop": null
+ },
+ "own-condenser-fairfield": {
+  "w": 424,
+  "h": 517,
+  "widths": [
+   424,
+   848
+  ],
+  "kind": "own",
+  "source": "hvac-gallery-03-fairfield-bryant-condenser.png",
+  "crop": null
+ },
+ "own-condenser-monroe": {
+  "w": 363,
+  "h": 483,
+  "widths": [
+   363,
+   726
+  ],
+  "kind": "own",
+  "source": "hvac-gallery-04-monroe-bryant-condenser.png",
+  "crop": null
+ },
+ "own-trane-team": {
+  "w": 1179,
+  "h": 1070,
+  "widths": [
+   640,
+   1179
+  ],
+  "kind": "own",
+  "source": "about-02-trane-supply-customer-solutions-team.jpg",
+  "crop": null
+ },
+ "desk": {
+  "w": 1376,
+  "h": 768,
+  "widths": [
+   640,
+   1280,
+   1376
+  ],
+  "kind": "illustration",
+  "source": "Google Flow, Nano Banana Pro",
+  "file": "b2-00.jpg"
+ },
+ "ac": {
+  "w": 1376,
+  "h": 768,
+  "widths": [
+   640,
+   1280,
+   1376
+  ],
+  "kind": "illustration",
+  "source": "Google Flow, Nano Banana Pro",
+  "file": "b2-03.jpg"
+ },
+ "maintenance": {
+  "w": 1376,
+  "h": 768,
+  "widths": [
+   640,
+   1280,
+   1376
+  ],
+  "kind": "illustration",
+  "source": "Google Flow, Nano Banana Pro",
+  "file": "b2-05.jpg"
+ },
+ "heatpump": {
+  "w": 1376,
+  "h": 768,
+  "widths": [
+   640,
+   1280,
+   1376
+  ],
+  "kind": "illustration",
+  "source": "Google Flow, Nano Banana Pro",
+  "file": "b2-07.jpg"
+ },
+ "own-multizone-p": {
+  "w": 607,
+  "h": 1080,
+  "widths": [
+   607,
+   1000
+  ],
+  "kind": "own",
+  "source": "home-23-ig-ductless-multizone-exterior.jpg",
+  "crop": [
+   430,
+   0,
+   1037,
+   1080
+  ]
+ },
+ "own-tech-hero": {
+  "w": 1179,
+  "h": 663,
+  "widths": [
+   640,
+   1179
+  ],
+  "kind": "own",
+  "source": "home-03-tech-servicing-furnace-repair-tile.jpg",
+  "crop": [
+   0,
+   640,
+   1179,
+   1303
+  ]
+ },
+ "own-tech-hero-p": {
+  "w": 891,
+  "h": 1584,
+  "widths": [
+   640,
+   891
+  ],
+  "kind": "own",
+  "source": "home-03-tech-servicing-furnace-repair-tile.jpg",
+  "crop": [
+   0,
+   0,
+   891,
+   1584
+  ]
+ },
+ "own-wiring-hero": {
+  "w": 1057,
+  "h": 595,
+  "widths": [
+   640,
+   1057
+  ],
+  "kind": "own",
+  "source": "home-02-tech-wiring-air-handler-maintenance-tile.jpg",
+  "crop": [
+   0,
+   120,
+   1057,
+   715
+  ]
+ },
+ "own-wiring-hero-p": {
+  "w": 543,
+  "h": 966,
+  "widths": [
+   543,
+   1000
+  ],
+  "kind": "own",
+  "source": "home-02-tech-wiring-air-handler-maintenance-tile.jpg",
+  "crop": [
+   514,
+   0,
+   1057,
+   966
+  ]
+ },
+ "repair-p": {
+  "w": 768,
+  "h": 1376,
+  "widths": [
+   640,
+   768
+  ],
+  "kind": "illustration",
+  "source": "Google Flow, Nano Banana Pro",
+  "file": "p-repair.jpg"
+ },
+ "boiler-p": {
+  "w": 768,
+  "h": 1376,
+  "widths": [
+   640,
+   768
+  ],
+  "kind": "illustration",
+  "source": "Google Flow, Nano Banana Pro",
+  "file": "p-boiler.jpg"
+ },
+ "waterheater-p": {
+  "w": 768,
+  "h": 1376,
+  "widths": [
+   640,
+   768
+  ],
+  "kind": "illustration",
+  "source": "Google Flow, Nano Banana Pro",
+  "file": "p-waterheater.jpg"
+ },
+ "cta-evening-p": {
+  "w": 768,
+  "h": 1376,
+  "widths": [
+   640,
+   768
+  ],
+  "kind": "illustration",
+  "source": "Google Flow, Nano Banana Pro",
+  "file": "p-cta-evening.jpg"
+ },
+ "minisplit-bed-p": {
+  "w": 768,
+  "h": 1376,
+  "widths": [
+   640,
+   768
+  ],
+  "kind": "illustration",
+  "source": "Google Flow, Nano Banana Pro",
+  "file": "p-minisplit-bed.jpg"
+ },
+ "desk-p": {
+  "w": 768,
+  "h": 1376,
+  "widths": [
+   640,
+   768
+  ],
+  "kind": "illustration",
+  "source": "Google Flow, Nano Banana Pro",
+  "file": "p-desk.jpg"
+ },
+ "maintenance-p": {
+  "w": 768,
+  "h": 1376,
+  "widths": [
+   640,
+   768
+  ],
+  "kind": "illustration",
+  "source": "Google Flow, Nano Banana Pro",
+  "file": "p-maintenance.jpg"
+ },
+ "furnace-p": {
+  "w": 768,
+  "h": 1376,
+  "widths": [
+   640,
+   768
+  ],
+  "kind": "illustration",
+  "source": "Google Flow, Nano Banana Pro",
+  "file": "p-furnace.jpg"
+ },
+ "equipment-p": {
+  "w": 768,
+  "h": 1376,
+  "widths": [
+   640,
+   768
+  ],
+  "kind": "illustration",
+  "source": "Google Flow, Nano Banana Pro",
+  "file": "p-equipment.jpg"
+ },
+ "about-street-p": {
+  "w": 768,
+  "h": 1376,
+  "widths": [
+   640,
+   768
+  ],
+  "kind": "illustration",
+  "source": "Google Flow, Nano Banana Pro",
+  "file": "p-about-street.jpg"
+ },
+ "hero-home": {
+  "w": 1376,
+  "h": 768,
+  "widths": [
+   640,
+   1280,
+   1376
+  ],
+  "kind": "illustration",
+  "source": "Google Flow, Nano Banana Pro",
+  "file": "h5-a-w1.jpg"
+ },
+ "hero-home-p": {
+  "w": 768,
+  "h": 1376,
+  "widths": [
+   640,
+   768
+  ],
+  "kind": "illustration",
+  "source": "Google Flow, Nano Banana Pro",
+  "file": "h5-a-p2.jpg"
+ },
+ "hero-porch": {
+  "w": 1376,
+  "h": 768,
+  "widths": [
+   640,
+   1280,
+   1376
+  ],
+  "kind": "illustration",
+  "source": "Google Flow, Nano Banana Pro",
+  "file": "h5-b-w2.jpg"
+ },
+ "hero-porch-p": {
+  "w": 768,
+  "h": 1376,
+  "widths": [
+   640,
+   768
+  ],
+  "kind": "illustration",
+  "source": "Google Flow, Nano Banana Pro",
+  "file": "h5-b-p1.jpg"
+ }
+}

@@ -1,0 +1,13 @@
+# Build helpers and test output (regenerate with the scripts)
+node_modules
+site/qa/node_modules
+site/qa/review/
+qa-shots/
+*.log
+.DS_Store
+
+# Raw inputs (web-ready copies live in site/public/img)
+media/flow/
+inventory/raw/
+inventory/images/
+references/*.jpg

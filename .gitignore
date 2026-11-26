@@ -11,3 +11,5 @@ media/flow/
 inventory/raw/
 inventory/images/
 references/*.jpg
+site/qa/*.log
+site/qa/parity.json

@@ -4,6 +4,15 @@
   const d = document, root = d.documentElement;
   root.classList.add('js');
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  d.addEventListener('touchstart', () => {}, { passive: true });  // lets :active press states show on iOS Safari
+  // Chrome sometimes drops a class-triggered transition (measured on fresh loads in Chrome: the class lands, the end state shows, nothing moves;
+  // never seen in Safari). `start` confirms something really began animating; if not, it takes the class off and replays it on the next frame.
+  const start = (el, cls, probe, k = 0) => {
+    el.classList.add(cls); probe = probe || el;
+    if (reduce || !probe.getAnimations || probe.getAnimations().length || k > 3) return;
+    el.classList.remove(cls); void el.offsetWidth;
+    requestAnimationFrame(() => requestAnimationFrame(() => start(el, cls, probe, k + 1)));
+  };
   const onView = (el, cb, opts) => { const io = new IntersectionObserver(es => es.forEach(e => cb(e.isIntersecting, e)), opts); io.observe(el); return io; };
 
   // HERO: slides hold 6 s, cut to #0a0a0c then 0.7 s fade, 8 s Ken Burns 1.16 -> 1, word blur reveal (CSS).
@@ -29,7 +38,7 @@
       slides.forEach(s => { s.classList.remove('on'); s.setAttribute('aria-hidden', 'true'); s.querySelectorAll('a,button').forEach(a => a.tabIndex = -1); });
       const s = slides[n]; void s.offsetWidth;
       s.removeAttribute('aria-hidden'); s.querySelectorAll('a,button').forEach(a => a.removeAttribute('tabindex'));
-      requestAnimationFrame(() => requestAnimationFrame(() => s.classList.add('on')));
+      requestAnimationFrame(() => requestAnimationFrame(() => start(s, 'on', s.querySelector('.img'))));
       rail.forEach((b, i) => { b.classList.toggle('on', i === n); b.setAttribute('aria-current', i === n ? 'true' : 'false'); });
       cur = n; schedule();
     };
@@ -42,12 +51,14 @@
   }
 
   // Reveal on scroll (once): .rv y50 0.6 s; .rv-spring y30 1.2 s overshoot.
-  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { rootMargin: '0px 0px -60px 0px' });
+  // After a spring reveal has finished its 0.3 s start delay is cleared, so later changes on the same element (accordion open) are not delayed.
+  const reveal = el => { if (el.__rv) return; el.__rv = 1; start(el, 'in'); io.unobserve(el); if (el.style.transitionDelay) setTimeout(() => { el.style.transitionDelay = ''; }, 1700); };
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) reveal(e.target); }), { rootMargin: '0px 0px -60px 0px' });
   let pending = [...d.querySelectorAll('.rv,.rv-spring')];
   pending.forEach(el => { if (el.classList.contains('rv-spring')) el.style.transitionDelay = '.3s'; io.observe(el); });
   // Fast-scroll catch-up: anything the visitor has already scrolled past is revealed, never left blank.
   let tick = 0;
-  const catchUp = () => { tick = 0; const vh = innerHeight; pending = pending.filter(el => { if (el.classList.contains('in')) return false; if (el.getBoundingClientRect().top < vh) { el.classList.add('in'); io.unobserve(el); return false; } return true; }); if (!pending.length) removeEventListener('scroll', onScroll); };
+  const catchUp = () => { tick = 0; const vh = innerHeight; pending = pending.filter(el => { if (el.__rv) return false; if (el.getBoundingClientRect().top < vh) { reveal(el); return false; } return true; }); if (!pending.length) removeEventListener('scroll', onScroll); };
   const onScroll = () => { if (!tick) tick = requestAnimationFrame(catchUp); };
   addEventListener('scroll', onScroll, { passive: true });
 
@@ -64,7 +75,9 @@
       c.appendChild(inner); o.appendChild(c); cols.push([inner, total, k]);
     });
     if (o.dataset.s) { const suf = d.createElement('span'); suf.textContent = o.dataset.s; o.appendChild(suf); }
-    const fin = () => cols.forEach(([el, t, k]) => { el.style.transition = reduce ? 'none' : `transform 2s cubic-bezier(.22,1,.36,1) ${k * .06}s`; el.style.transform = `translateY(-${t}em)`; });
+    const fin = (n = 0) => { cols.forEach(([el, t, k]) => { el.style.transition = reduce ? 'none' : `transform 2s cubic-bezier(.22,1,.36,1) ${k * .06}s`; el.style.transform = `translateY(-${t}em)`; });
+      const c0 = cols[0] && cols[0][0];  // same self-check as `start`: if the roll did not begin, reset and replay it
+      if (!reduce && c0 && c0.getAnimations && !c0.getAnimations().length && n < 3) { cols.forEach(([el]) => { el.style.transition = 'none'; el.style.transform = 'none'; }); void o.offsetWidth; requestAnimationFrame(() => requestAnimationFrame(() => fin(n + 1))); } };
     const ob = new IntersectionObserver(es => { if (es[0].isIntersecting) { ob.disconnect(); fin(); } }, { rootMargin: '0px 0px -100px 0px' }); ob.observe(o);
   });
 
@@ -79,8 +92,8 @@
     prev.onclick = () => ic > 0 && go(ic - 1); next.onclick = () => ic < N - 1 && go(ic + 1);
     is.forEach((s, i) => { if (i) s.setAttribute('aria-hidden', 'true'); });
     onView(ind, v => { vis = v; plan(); });
-    const o1 = new IntersectionObserver(es => { if (es[0].isIntersecting) { ind.classList.add('in'); o1.disconnect(); } }, { rootMargin: '0px 0px -60px 0px' }); o1.observe(ind);
-    const o2 = new IntersectionObserver(es => { if (es[0].isIntersecting) { ind.classList.add('in2'); o2.disconnect(); } }, { rootMargin: '0px 0px -40px 0px' }); o2.observe(ind.querySelector('.bottom'));
+    const o1 = new IntersectionObserver(es => { if (es[0].isIntersecting) { start(ind, 'in', ind.querySelector('.islide.on .bgi')); o1.disconnect(); } }, { rootMargin: '0px 0px -60px 0px' }); o1.observe(ind);
+    const o2 = new IntersectionObserver(es => { if (es[0].isIntersecting) { start(ind, 'in2', ind.querySelector('.pager-wrap')); o2.disconnect(); } }, { rootMargin: '0px 0px -40px 0px' }); o2.observe(ind.querySelector('.bottom'));
     // Progressive bottom blur: 8 layers, blur 10/2^(7-k) px, masked bands.
     const pb = ind.querySelector('.pblur'), B = 10;
     if (pb) for (let k = 0; k < 8; k++) { const b = B / Math.pow(2, 7 - k), a = k * 12.5, c = [a, a + 12.5, a + 25, a + 37.5].map(v => Math.min(v, 100));

@@ -11,6 +11,7 @@
 - Live test copy (noindex): https://vastlyresilient.github.io/active-air-website/ — republish with `sh site/publish-pages.sh` (builds with the /active-air-website prefix and force-pushes the gh-pages branch)
 - QA: `cd site/qa && node func.mjs` (15 routes × Chrome 360–1920 + WebKit iPhone: status, overflow, off-screen controls, reveals after fast/reverse scroll, broken images, hero, Call+Book, carousel, accordion, dock, phone menu, form, reduced motion)
 - Idle survey: `cd ~/starwell-si-site/qa && URL=http://localhost:4403/ node idle-survey.mjs`
+- Phone-vs-desktop motion: `cd site/qa && node parity.mjs` (every scroll effect measured the same way on desktop Chrome, WebKit iPhone and Chrome Android, then compared; also a late-script load, no-script and real touch flings). `node first-screen.mjs 30` repeats fresh loads in real Chrome and WebKit to confirm the first-screen animation and load-time reveals really play.
 - Images: `cd media && python prep.py` (Flow picks + own-photo crops → `site/public/img/m/`)
 
 ## Routes (16)
@@ -29,6 +30,8 @@
 - Idle survey: 0 draws/s at every stop with nothing moving; motion only at the hero (slides/zoom), the carousel and the 30 fps asterisk.
 - iOS Simulator (iPhone 17 Pro, Safari): home and a service page load; label, CTAs, dock and menu checked.
 - Fidelity: section positions match ConsultPro within a few px at 1440 and 390 (eyebrow 1000, statement 1047, avatars 1300).
+- Phone-vs-desktop motion (`parity.mjs`, 15 routes × 3 browsers): 199 checks SAME, 0 different. Hero zoom and word reveal, section reveals (same trigger line, same timings), counters, carousel (entrance, 5 s autoplay, pause off screen, 8 blur layers), accordion + photo crossfade, 30 fps asterisk, Call/Book dock, real touch flings down and back.
+- Fixed while checking: (1) Chrome (desktop and Android) skipped the first-screen animation on roughly 1 fresh load in 3 (the class landed, nothing moved; Safari never did). `site.js` now confirms an entrance really started (`getAnimations`) and replays it if not: 0 skipped in 30 fresh loads each in real Chrome desktop, Chrome Android profile and WebKit iPhone. Same self-check on reveals, carousel entrance and counters. (2) The `js` flag is now set in the page head, so on a slow phone connection nothing shows and then hides while the script loads. (3) With no script at all, the first screen is simply shown. (4) Accordion rows now rise in like the other cards (their reveal was being overridden). (5) Buttons, card arrows and links give press feedback on touch, matching desktop hover.
 - Real-phone check by Bobby: pending.
 
 ## Open (needs Active Air / Bobby) — see `site/gaps.txt`

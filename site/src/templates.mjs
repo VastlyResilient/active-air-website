@@ -74,6 +74,7 @@ export function page(s, p, body) {
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<script>document.documentElement.className='js'</script>
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(p.desc || s.desc)}">
 <link rel="canonical" href="${s.origin}${p.path || '/'}">
